@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billpoint Transaction Receipt</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body
+    style="margin: 0; padding: 20px; background-color: #F3F5F8; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #F3F5F8;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" style="max-width: 600px; margin: 0 auto;">
+                    <tr>
+                        <td
+                            style="background-color: #ffffff; border: 1px solid #e5e7eb; border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); padding: 32px;">
+                            <!-- Logo Header -->
+                            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 32px;">
+                                <tr>
+                                    <td align="center">
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="text-align: center;">
+                                                    <img src="https://i.ibb.co/8D29B9SC/e924860bd30dafef2a2654e1ccfe40c24f8e1712.jpg"
+                                                        alt="Billpoint Logo"
+                                                        style="height: 40px; width: auto; display: inline-block;" />
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Greeting Section -->
+                            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
+                                <tr>
+                                    <td>
+                                        <p style="color: #032B69; font-size: 16px; margin: 0 0 8px 0;">Hi {{name}},</p>
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tr>
+                                                <td style="color: #032B69; font-size: 14px; vertical-align: middle;">
+                                                    Your recent transaction has been successfully processed. 🎊 </td>
+                                                <td style="padding-left: 8px; vertical-align: middle;">
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p style="color: #6B7280; font-size: 14px; margin: 4px 0 0 0;">Here are the
+                                            details of your purchase:</p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Transaction Details Table -->
+                            <table width="100%" cellpadding="0" cellspacing="0"
+                                style="border-collapse: collapse; margin-bottom: 24px;">
+                                <tr style="border-bottom: 1px solid #f3f4f6;">
+                                    <td style="padding: 12px 0; color: #032B69A3; font-size: 14px;">Airtime Provider
+                                    </td>
+                                    <td style="text-align: right;">
+                                        <table cellpadding="0" cellspacing="0" style="display: inline-table;">
+                                            <tr>
+                                                <td style="padding-right: 12px;">
+                                                    <img src="https://i.ibb.co/8D29B9SC/e924860bd30dafef2a2654e1ccfe40c24f8e1712.jpg"
+                                                        alt={{provider}}
+                                                        style="width: 32px; height: 32px; background-color: #3B82F6; border-radius: 50%; display: inline-block; text-align: center; line-height: 32px; text-decoration: none;" />
+                                                </td>
+                                                <td
+                                                    style="padding-right: 12px; text-align: right; color: #374151; font-size: 14px;">
+                                                    {{provider}}</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #f3f4f6;">
+                                    <td style="padding: 12px 0; color: #032B69A3; font-size: 14px;">Phone Number</td>
+                                    <td style="padding: 12px 0; text-align: right; color: #374151; font-size: 14px;">
+                                        {{phone}}</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #f3f4f6;">
+                                    <td style="padding: 12px 0; color: #032B69A3; font-size: 14px;">Date</td>
+                                    <td style="padding: 12px 0; text-align: right; color: #374151; font-size: 14px;">
+                                        {{date}}</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #f3f4f6;">
+                                    <td style="padding: 12px 0; color: #032B69A3; font-size: 14px;">Status</td>
+                                    <td style="padding: 12px 0; text-align: right;">
+                                        <span
+                                            style="color: #10B981; font-size: 14px; font-weight: 500;">{{status}}</span>
+                                    </td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #f3f4f6;">
+                                    <td style="padding: 12px 0; color: #032B69A3; font-size: 14px;">Transaction Fees
+                                    </td>
+                                    <td style="padding: 12px 0; text-align: right; color: #374151; font-size: 14px;">₦
+                                        {{fees}}</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #f3f4f6;">
+                                    <td style="padding: 12px 0; color: #032B69A3; font-size: 14px;">Amount</td>
+                                    <td style="padding: 12px 0; text-align: right; color: #374151; font-size: 14px;">₦
+                                        {{amount}}</td>
+                                </tr>
+                                <tr style="border-bottom: 1px solid #f3f4f6;">
+                                    <td style="padding: 12px 0; color: #374151; font-size: 14px; font-weight: 600;">
+                                        Total</td>
+                                    <td
+                                        style="padding: 12px 0; text-align: right; color: #374151; font-size: 14px; font-weight: 600;">
+                                        ₦ {{total}}
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Support Note -->
+                            <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom: 24px;">
+                                <tr>
+                                    <td>
+                                        <p
+                                            style="color: #6B7280; font-size: 13px; margin: 0 0 4px 0; line-height: 1.5;">
+                                            Thank you for using Billpoint. We're glad to serve you.
+                                        </p>
+                                        <p style="color: #6B7280; font-size: 13px; margin: 0; line-height: 1.5;">
+                                            If you have any questions, please contact our support team at
+                                            <a href="mailto:support@billpoint.com"
+                                                style="color: #3B82F6; text-decoration: none;">support@billpoint.com</a>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+
+                            <!-- Footer -->
+                            <table width="100%" cellpadding="0" cellspacing="0"
+                                style="padding-top: 24px; border-top: 1px solid #e5e7eb;">
+                                <tr>
+                                    <td style="vertical-align: top;">
+                                        <p style="color: #6B7280; font-size: 14px; margin: 0;">Warm regards,</p>
+                                        <p style="color: #374151; font-size: 14px; font-weight: 600; margin: 0;">
+                                            Billpoint</p>
+                                    </td>
+                                    <td style="text-align: right; vertical-align: top;">
+                                        <table cellpadding="0" cellspacing="0" style="display: inline-table;">
+                                            <tr>
+                                                <td style="padding-right: 12px;">
+                                                    <a href="#"
+                                                        style="width: 30px; height: 30px; background-color: #3B82F6; border-radius: 50%; display: inline-block; text-align: center; line-height: 32px; text-decoration: none;">
+                                                        <i class="fab fa-facebook-f"
+                                                            style="color: white; font-size: 14px;"></i>
+                                                    </a>
+                                                </td>
+                                                <td style="padding-right: 12px;">
+                                                    <a href="#"
+                                                        style="width: 30px; height: 30px; background-color: #3B82F6; border-radius: 50%; display: inline-block; text-align: center; line-height: 32px; text-decoration: none;">
+                                                        <i class="fab fa-twitter"
+                                                            style="color: white; font-size: 14px;"></i>
+                                                    </a>
+                                                </td>
+                                                <td>
+                                                    <a href="#"
+                                                        style="width: 30px; height: 30px; background-color: #3B82F6; border-radius: 50%; display: inline-block; text-align: center; line-height: 32px; text-decoration: none;">
+                                                        <i class="fab fa-instagram"
+                                                            style="color: white; font-size: 14px;"></i>
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
