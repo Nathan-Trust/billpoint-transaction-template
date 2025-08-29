@@ -11,3 +11,9 @@
 
 ## x
 <a href="https://imgbb.com/"><img src="https://i.ibb.co/RpHH0Zj5/x.png" alt="x" border="0"></a>
+
+## new x
+<a href="https://ibb.co/QFxBKGRn"><img src="https://i.ibb.co/C5SdHFZv/new-2023-twitter-logo-x-icon-design.png" alt="new-2023-twitter-logo-x-icon-design" border="0"></a>
+
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/XxTzbH5x/Instagram-Logo-Vector-Icons-Free-Download.jpg" alt="Instagram-Logo-Vector-Icons-Free-Download" border="0"></a>
